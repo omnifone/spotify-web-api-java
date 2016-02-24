@@ -1,0 +1,61 @@
+{
+  "items" : [ {
+    "track" : {
+      "album" : {
+        "name" : "Feeling"
+      },
+      "artists" : [ {
+        "name" : "Bibio"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 207733,
+      "external_ids" : {
+        "isrc" : "GBBPW1500272"
+      },
+      "id" : "3sOhpTLU7c6we1RcZJtzO6",
+      "name" : "Feeling",
+      "track_number" : 1
+    }
+  }, {
+    "track" : {
+      "album" : {
+        "name" : "Ocean Eyes (Astronomyy Edit)"
+      },
+      "artists" : [ {
+        "name" : "Billie Eilish"
+      }, {
+        "name" : "Astronomyy"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 296275,
+      "external_ids" : {
+        "isrc" : "TCACL1611532"
+      },
+      "id" : "76dv5KLRIAejZNmYqYnFYw",
+      "name" : "Ocean Eyes (Astronomyy Edit)",
+      "track_number" : 1
+    }
+  }, {
+    "track" : {
+      "album" : {
+        "name" : "Moth"
+      },
+      "artists" : [ {
+        "name" : "Chairlift"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 268986,
+      "external_ids" : {
+        "isrc" : "USSM11503435"
+      },
+      "id" : "2yXfkGdRTSPgSFJfOGsLhk",
+      "name" : "Crying in Public",
+      "track_number" : 5
+    }
+  } ],
+  "limit" : 3,
+  "next" : null,
+  "offset" : 0,
+  "previous" : null,
+  "total" : 3
+}
