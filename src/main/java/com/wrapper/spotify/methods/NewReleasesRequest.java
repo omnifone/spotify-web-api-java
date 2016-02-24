@@ -36,7 +36,7 @@ public class NewReleasesRequest extends AbstractRequest {
     return JsonUtil.createNewReleases(JSONObject.fromObject(jsonString));
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder limit(int limit) {
       assert (limit > 0);

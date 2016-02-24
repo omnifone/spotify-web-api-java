@@ -39,7 +39,7 @@ public class ArtistRequest extends AbstractRequest {
     return JsonUtil.createArtist(JSONObject.fromObject(jsonString));
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public ArtistRequest build() {
       return new ArtistRequest(this);

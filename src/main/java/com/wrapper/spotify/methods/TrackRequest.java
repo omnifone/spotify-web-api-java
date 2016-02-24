@@ -36,7 +36,7 @@ public class TrackRequest extends AbstractRequest {
   }
 
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     /**
      * The track with the given id.

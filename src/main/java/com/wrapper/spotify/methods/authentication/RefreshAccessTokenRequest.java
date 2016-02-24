@@ -41,7 +41,7 @@ public class RefreshAccessTokenRequest extends AbstractRequest {
     return JsonUtil.createRefreshAccessTokenResponse(jsonObject);
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder basicAuthorizationHeader(String clientId, String clientSecret) {
       assert (clientId != null);

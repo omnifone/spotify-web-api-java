@@ -16,7 +16,7 @@ public class AuthorizationURLRequest extends AbstractRequest {
     return new Builder();
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder scopes(List<String> scopes) {
       return parameter("scope", Joiner.on(" ").join(scopes).toString());

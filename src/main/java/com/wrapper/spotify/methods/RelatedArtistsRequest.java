@@ -41,7 +41,7 @@ public class RelatedArtistsRequest extends AbstractRequest {
     return JsonUtil.createArtists(jsonObject);
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public RelatedArtistsRequest build() {
       return new RelatedArtistsRequest(this);

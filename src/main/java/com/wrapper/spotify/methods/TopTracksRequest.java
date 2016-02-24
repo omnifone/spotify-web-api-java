@@ -39,7 +39,7 @@ public class TopTracksRequest extends AbstractRequest {
     return new Builder();
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder id(String id) {
       assert (id != null);

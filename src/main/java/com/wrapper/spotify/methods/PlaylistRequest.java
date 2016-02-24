@@ -40,7 +40,7 @@ public class PlaylistRequest extends AbstractRequest {
     return JsonUtil.createPlaylist(jsonObject);
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder fields(String fields) {
       assert (fields != null);

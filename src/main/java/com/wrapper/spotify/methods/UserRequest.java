@@ -40,7 +40,7 @@ public class UserRequest extends AbstractRequest {
     return JsonUtil.createUser(jsonString);
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder username(String username) {
       assert (username!= null);

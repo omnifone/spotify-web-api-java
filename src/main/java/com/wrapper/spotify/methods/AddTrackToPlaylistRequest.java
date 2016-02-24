@@ -36,7 +36,7 @@ public class AddTrackToPlaylistRequest extends AbstractRequest {
     return JsonUtil.createSnapshotResponse(jsonString);
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder position(int position) {
       assert (position >= 0);

@@ -43,7 +43,7 @@ public class AuthorizationCodeGrantRequest extends AbstractRequest {
     return JsonUtil.createTokenResponse(jsonObject);
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder grantType(String grantType) {
       assert (grantType != null);

@@ -38,7 +38,7 @@ public class PlaylistCreationRequest extends AbstractRequest {
     return JsonUtil.createPlaylist(jsonObject);
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     private JSONObject jsonBody;
 

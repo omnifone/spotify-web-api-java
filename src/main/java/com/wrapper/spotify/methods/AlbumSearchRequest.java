@@ -41,7 +41,7 @@ public class AlbumSearchRequest extends AbstractRequest {
     return new Builder();
   }
 
-  public static final class Builder extends AbstractRequest.Builder<Builder> {
+  public static class Builder extends AbstractRequest.Builder<Builder> {
 
     public Builder query(String query) {
       assert (query != null);
