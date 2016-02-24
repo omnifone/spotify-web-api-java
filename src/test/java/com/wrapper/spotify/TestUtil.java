@@ -3,9 +3,9 @@ package com.wrapper.spotify;
 import com.wrapper.spotify.exceptions.WebApiException;
 
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.Reader;
+import java.io.InputStreamReader;
 import java.nio.CharBuffer;
 
 import static org.mockito.Matchers.any;
@@ -23,7 +23,7 @@ public class TestUtil {
   }
 
   private static String readFromFile(File file) throws IOException {
-    Reader reader = new FileReader(file);
+    InputStreamReader reader = new InputStreamReader(new FileInputStream(file), "UTF-8");
     CharBuffer charBuffer = CharBuffer.allocate(MAX_TEST_DATA_FILE_SIZE);
     reader.read(charBuffer);
     charBuffer.position(0);
