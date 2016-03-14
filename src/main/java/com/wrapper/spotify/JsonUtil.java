@@ -726,7 +726,13 @@ public class JsonUtil {
 
     public static Page<PlaylistTrack> createPlaylistTrackPage(JSONObject playlistTrackPageJson) {
         final Page<PlaylistTrack> returnedPage = createItemlessPage(playlistTrackPageJson);
-        returnedPage.setItems(createPlaylistTracks(playlistTrackPageJson.getJSONArray("items")));
+        
+        if (existsAndNotNull("items", playlistTrackPageJson)) {
+            returnedPage.setItems(createPlaylistTracks(playlistTrackPageJson.getJSONArray("items")));
+        } else if (existsAndNotNull("tracks", playlistTrackPageJson)) {
+            returnedPage.setItems(createPlaylistTracks(playlistTrackPageJson.getJSONArray("tracks")));
+        }
+        
         return returnedPage;
     }
 

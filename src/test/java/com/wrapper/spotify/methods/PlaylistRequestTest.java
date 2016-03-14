@@ -76,7 +76,7 @@ public class PlaylistRequestTest {
 
     final PlaylistRequest request = api.getPlaylist("thelinmichael", "3ktAYNcRHpazJ9qecm3ptn")
             .httpManager(TestUtil.MockedHttpManager.returningJson("playlist-with-fields-response.json"))
-            .fields("id,owner.id,name,description,snapshot_id")
+            .fields("id,owner.id,name,description,snapshot_id,tracks.total")
             .build();
 
     final Playlist playlist = request.get();
@@ -86,6 +86,7 @@ public class PlaylistRequestTest {
     assertEquals("This is a test!", playlist.getDescription());
     assertEquals("musicidgant", playlist.getOwner().getId());
     assertEquals("UPadnjTc5SB8lXPzhLjWgkBybJkR6AeN/bFQUcmEHrHrte5IT6KKclS/HSCh0IEx", playlist.getSnapshotId());
+    assertEquals(100, playlist.getTracks().getTotal());
   }  
 
   @Test

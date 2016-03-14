@@ -5,5 +5,8 @@
   "owner" : {
     "id" : "musicidgant"
   },
-  "snapshot_id" : "UPadnjTc5SB8lXPzhLjWgkBybJkR6AeN/bFQUcmEHrHrte5IT6KKclS/HSCh0IEx"
+  "snapshot_id" : "UPadnjTc5SB8lXPzhLjWgkBybJkR6AeN/bFQUcmEHrHrte5IT6KKclS/HSCh0IEx",
+  "tracks" : {
+    "total" : 100
+  }
 }
